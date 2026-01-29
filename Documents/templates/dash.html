@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Edumorph Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        /* ===== BASE ===== */
+        body {
+            display: flex;
+            height: 100vh;
+            background: #f4f4f4;
+            color: #000;
+        }
+
+        /* ===== SIDEBAR ===== */
+        .sidebar {
+            width: 230px;
+            background: #ffffff;
+            border-right: 1px solid #ccc;
+            padding: 20px;
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+
+        .menu a {
+            display: block;
+            padding: 12px;
+            margin: 6px 0;
+            text-decoration: none;
+            color: #000;
+            border-radius: 6px;
+        }
+
+        .menu a.active,
+        .menu a:hover {
+            background: #e0e0e0;
+        }
+
+        /* ===== MAIN ===== */
+        .main {
+            flex: 1;
+            padding: 25px;
+            overflow: auto;
+        }
+
+        /* ===== TOP CARD ===== */
+        .top-card {
+            background: #ffffff;
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 25px;
+        }
+
+        .top-card h2 {
+            font-size: 22px;
+        }
+
+        .top-card p {
+            font-size: 14px;
+            color: #333;
+        }
+
+        /* ===== STREAK ===== */
+        .streak {
+            border: 1px solid #999;
+            padding: 8px 14px;
+            border-radius: 20px;
+            font-size: 14px;
+        }
+
+        /* ===== UPLOAD CARD ===== */
+        .card {
+            background: #ffffff;
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 12px;
+        }
+
+        .card h3 {
+            margin-bottom: 15px;
+        }
+
+        /* ===== UPLOAD BOX ===== */
+        .upload-box {
+            border: 2px dashed #999;
+            border-radius: 12px;
+            height: 260px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .upload-box strong {
+            margin-top: 10px;
+            font-size: 16px;
+        }
+
+        .upload-box p {
+            font-size: 14px;
+            color: #555;
+            margin-top: 6px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+        <div class="logo">Edumorph</div>
+
+        <div class="menu">
+            <a class="active">Dashboard</a>
+            <a>My Library</a>
+            <a>Settings</a>
+            <a>AI Assistant</a>
+            <a>User Profile</a>
+            <a>Sign Out</a>
+        </div>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div class="main">
+
+        <div class="top-card">
+            <div>
+                <h2>Welcome, Student!</h2>
+                <p>Keep up your learning momentum</p>
+            </div>
+            <div class="streak">29 Day Streak</div>
+        </div>
+
+        <div class="card">
+            <h3>Upload Your Learning Materials</h3>
+
+            <div class="upload-box">
+                <div style="font-size:40px;">📁</div>
+                <strong>Drop PDF or Image Here</strong>
+                <p>or click to browse your device</p>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
